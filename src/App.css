@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LoginForm,
+.SignupForm {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: hsl(0, 0%, 85%);
+  border-radius: 5px;
+  margin-top: 150px;
+  padding-bottom: 20px;
+}
+
+.login-credentials,
+.signup-credentials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+.login-credentials input,
+.login-credentials button,
+.signup-credentials input,
+.signup-credentials button {
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 5px;
+}
+
+.login-credentials input,
+.signup-credentials input {
+  height: 45px;
+  padding-left: 10px;
+}
+
+.login-credentials button,
+.signup-credentials button {
+  height: 50px;
+}
+
+.login-credentials input,
+.login-credentials button,
+.signup-credentials input,
+.signup-credentials button {
+  box-sizing: border-box;
+}
+
+.login-credentials input,
+button, .signup-credentials input, button {
+  width: 100%;
+}
+
+.LoginForm p, .SignupForm p {
+  text-align: center;
+}
+
+.login-credentials button:hover, .signup-credentials button:hover {
+  background-color: hsl(0, 0%, 90%);
+  ;
+}
+
+.login-credentials button:active, .signup-credentials button:active {
+  background-color: hsl(0, 0%, 95%);
+  ;
+}
