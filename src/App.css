@@ -236,4 +236,8 @@ button {
   .weather-container {
     margin-bottom: 100px;
   }
+  .LoginForm,
+.SignupForm {
+width: 350px;
+}
 }
