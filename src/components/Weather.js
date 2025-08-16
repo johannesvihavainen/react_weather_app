@@ -17,7 +17,7 @@ export default function Weather() {
         if (e) e.preventDefault()
 
 
-        const API_key = 'f41b23c3dfe1b23b8e6b43aa7aae62ff'
+        const API_key = process.env.REACT_APP_WEATHER_API_KEY
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${API_key}`
 
         try {

@@ -21,7 +21,7 @@ export default function SignupPage() {
                 await doCreateUserWithEmailAndPassword(email, password)
             } catch (err) {
                 console.error(err)
-                setErrorMessage("Please make sure to fill out both fields.")
+                setErrorMessage("Please make sure to fill out both fields or use another account if it's already been created.")
                 setTimeout(() => setErrorMessage(""), 3000)
             }
             setIsRegistering(false)
