@@ -4,7 +4,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: hsl(0, 0%, 70%);
 }
-.LoginContainer, .SignupContainer {
+
+.LoginContainer,
+.SignupContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,33 +59,40 @@ body {
 }
 
 .login-credentials input,
-button, .signup-credentials input, button {
+button,
+.signup-credentials input,
+button {
   width: 100%;
 }
 
-.LoginForm p, .SignupForm p {
+.LoginForm p,
+.SignupForm p {
   text-align: center;
 }
 
-.login-credentials button:hover, .signup-credentials button:hover {
+.login-credentials button:hover,
+.signup-credentials button:hover {
   background-color: hsl(0, 0%, 90%);
 }
 
-.login-credentials button:active, .signup-credentials button:active {
+.login-credentials button:active,
+.signup-credentials button:active {
   background-color: hsl(0, 0%, 95%);
 }
 
 header .nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-wrap: nowrap;
-    align-items: center;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
 }
+
 header .nav-bar h1 {
   font-size: 1rem;
 }
+
 header .nav-bar button {
   height: 50px;
   width: 200px;
@@ -93,17 +102,19 @@ header .nav-bar button {
 }
 
 header {
-    background-color: hsl(0, 0%, 90%);
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+  background-color: hsl(0, 0%, 90%);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 .weather-form-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 150px;
 }
+
 .weather-data-form {
   width: 500px;
   display: flex;
@@ -112,27 +123,35 @@ header {
   justify-content: center;
   gap: 10px;
 }
+
 .weather-data-form h1 {
   font-size: 2.5rem;
 }
+
 .weather-data-form input {
   padding-left: 10px;
 }
-.weather-data-form input, button {
+
+.weather-data-form input,
+button {
   width: 100%;
   border: 1px solid hsl(0, 0%, 76%);
   box-sizing: border-box;
   border-radius: 5px;
 }
-.weather-data-form input, button {
+
+.weather-data-form input,
+button {
   height: 50px;
 }
+
 .weather-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
 }
+
 .weather-data {
   background-color: hsl(0, 0%, 90%);
   width: 500px;
@@ -143,41 +162,78 @@ header {
   border-radius: 5px;
   text-align: center;
 }
+
 .weather-icon {
   width: 200px;
 }
+
 .main-temps-and-title {
   display: flex;
   align-items: center;
   gap: 50px;
 }
+
 .main-temps {
-background-color: hsl(0, 0%, 78%);
-padding: 10px;
-display: flex;
-height: 60px;
-border-radius: 5px;
-gap: 20px;
-align-items: center;
+  background-color: hsl(0, 0%, 78%);
+  padding: 10px;
+  display: flex;
+  height: 60px;
+  border-radius: 5px;
+  gap: 20px;
+  align-items: center;
 }
+
 .main-temps p:first-child {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .main-temps p:last-child {
   font-weight: bold;
   text-decoration: underline;
 }
+
 .location-wrapper {
   background-color: hsl(0, 0%, 78%);
   border-radius: 5px;
   padding: 10px;
   height: 60px;
 }
+
 .min-and-max {
   display: flex;
   gap: 50px;
   margin-top: 20px;
   font-weight: bold;
   text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+  header h1 {
+    text-wrap: wrap;
+  }
+
+  .weather-data {
+    background-color: hsl(0, 0%, 90%);
+    width: 350px;
+  }
+
+  .weather-data-form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .main-temps-and-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .weather-container {
+    margin-bottom: 100px;
+  }
 }
